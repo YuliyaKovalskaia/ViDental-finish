@@ -360,6 +360,7 @@ height: 160px;
 text-align: center;
 }
 
+
 /* our works */
 .works{
     width: 1600px;
@@ -381,6 +382,10 @@ padding-left: 700px;
 .item-work {
     width: 500px;
     flex-shrink: 0;
+}
+.photo-work{
+    width: 500px;
+    height: 450px;
 }
 
 .item-work:not(:last-child) {
@@ -548,9 +553,13 @@ padding-left: 700px;
 
 @media screen and (max-width:320px){
 /* header */
+.header {
+        width: 320px;
+    }
     .navigation{
         display: list-item;
-        height: 520px;
+        height: auto;
+        padding-bottom: 10px;
     }
     .logo-text{
         font-size: 20px; 
@@ -559,20 +568,26 @@ padding-left: 700px;
 .logo {
     padding-left: 110px;
     padding-top: 15px;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
 }
 .lotos{
     width: 100px;
 }
 .nav-list {
  display: contents;
+
 }
 
 .nav-item {
-    padding-left: 70px;
-    margin-bottom: 30px;
+    width: 320px;
+    text-align: center ;
+    padding-top: 0px;
+    margin-bottom: 10px;
+   }
+.phone-up {
+    width: 320px;
+    padding-left: 50px;
 }
-
 
 .footer,
 .works,
@@ -591,12 +606,12 @@ padding-left: 700px;
 }
 
 .main-title {
-    color: var(--light-letter);
-    font-size: 13px;
+    color: var(--main-title);
+    font-size: 18px;
     line-height: 1.2;
 
-    padding-top: 150px;
-    padding-left: 40px;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 .section-title {
@@ -711,6 +726,31 @@ padding-left: 700px;
     transform: scale(1);
 }
 
+/* our advantages */
+.advantages-title{
+    
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.advantages {
+    height: auto;
+}
+
+.advantages-list {
+    display:list-item;
+    margin-left: 30px;
+    padding-bottom: 40px;
+}
+
+
+.advantages-item:hover,
+.advantages-item:focus {
+    transform: scale(1);
+
+}
+
+
 /* our works */
 
 .work-title {
@@ -718,14 +758,41 @@ padding-left: 700px;
     padding-bottom: 20px;
     padding-left: 70px;
 }
+.list-work {
+    padding: 10px;
+}
+.photo-work {
+    width: 300px;
+    height: 260px;
+}
+
+.item-work {
+    width: 300px;  
+}
+.list-work {
+    padding: 0px;
+}
+
+.view-work {
+    max-width: 320px;
+    width: calc(100% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
 
 /* footer */
 .footer {
-    height: 300px;
+    height: auto;
     display: list-item;
     padding-left: 10px;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+ .footer-bg {
+     width: 320px;
+ }
 .address {
     padding-bottom: 20px;
 }
@@ -736,9 +803,74 @@ padding-left: 700px;
 }
 .to-call{
     padding-bottom: 20px;
+    text-align: left;
 }
 .phone-down {
     padding-top: 20px;
+}
+.social-network {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.facebook {
+    margin-right: 8px;
+}
+
+/* Price */
+.currently {
+    color: var(--hover-nav);
+}
+
+.navigation-price {
+    position:static;
+}
+
+.price-title {
+    padding-top: 20px;
+    margin-bottom: 8px;
+
+    text-align: center;
+}
+
+.add-text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.price-list {
+    margin-bottom: 10px;
+}
+
+.price-name {
+    width: 320px;
+
+    font-size: 16px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:   10px;
+    margin-left: 0px;
+
+}
+
+.price-item {
+
+    font-size: 14px;
+
+    width: 320px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.price-right {
+    float:inline-start;
+    margin-right: 15px;
+    
 }
 }
 
@@ -747,17 +879,24 @@ padding-left: 700px;
 @media(min-width:320px) and (max-width:360px) {
 
     /* header */
+    .header{
+     width: 360px;
+    }
     .navigation {
         display: list-item;
-        height: 470px;
+        height: auto;
+        padding-bottom: 15px;
     }
     .logo-text {
         font-size: 20px;
     }
     .logo {
-        padding-left: 120px;
+        width: 360px;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
         padding-top: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 15px;
     }
     .lotos {
         width: 100px;
@@ -767,9 +906,11 @@ padding-left: 700px;
         
     }
     .nav-item {
+        width: 360px;
+        text-align: center;
         padding-top: 0px;
-        padding-left: 90px;
-        margin-bottom: 40px;
+        padding-left: 0px;
+        margin-bottom: 15px;
     }
     .phone-up {
         margin-left: 115px;
@@ -780,15 +921,14 @@ padding-left: 700px;
 
     .intro {
         width: 360px;
-        height: 200px;
+        height: 220px;
     }
     .main-title {
-        color: var(--light-letter);
-        font-size: 13px;
-        line-height: 1.2;
+        font-size: 16px;
+        line-height: 1.1;
 
-        padding-top: 150px;
-        padding-left: 40px;
+        padding-top: 90px;
+        padding-left: 125px;
     }
     .section-title {
         font-weight: 700;
@@ -861,7 +1001,7 @@ padding-left: 700px;
 
     /* clinic */
     .clinic-section {
-        width: 320px;
+        width: 360px;
 
     }
     .clinic-title {
@@ -872,7 +1012,7 @@ padding-left: 700px;
     .clinic-list {
         display: list-item;
         padding-bottom: 20PX;
-        margin-left: -12px;
+        margin-left: 20px;
         padding-left: 0px;
     }
     
@@ -888,8 +1028,10 @@ padding-left: 700px;
         width: 360px;
     }
     .stuff-title {
-        padding-top: 30px;
-        padding-left: 130px;
+        width: 360px;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 0px;
         padding-bottom: 20px;
     }
     .stuff-list {
@@ -905,24 +1047,69 @@ padding-left: 700px;
     .stuff-items:focus {
         transform: scale(1);
     }
+/* our advantages */
+.advantages-title {
 
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.advantages {
+    width: 360px;
+    height: auto;
+}
+
+.advantages-list {
+    display: list-item;
+    margin-left: 60px;
+    padding-bottom: 40px;
+}
+
+
+.advantages-item:hover,
+.advantages-item:focus {
+    transform: scale(1);
+
+}
     /* our works */
     .works {
-        width: 320px;
+        width: 360px;
     }
     .work-title {
         padding-top: 30px;
-        padding-bottom: 20px;
-        padding-left: 70px;
+        padding-bottom: 10px;
+        padding-left: 60px;
     }
+        .photo-work {
+            width: 350px;
+            height: 290px;
+        }
+    
+        .item-work {
+            width: 350px;
+        }
+    
+        .list-work {
+            padding: 0px;
+        }
+    
+        .view-work {
+            max-width: 340px;
+            width: calc(100% - 10px);
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
 
     /* footer */
     .footer {
-        height: 300px;
-        width: 320px;
+        height: auto;
         display: list-item;
         padding-left: 10px;
-        padding-top: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
     }
     .address {
         padding-bottom: 20px;
@@ -934,9 +1121,61 @@ padding-left: 700px;
     }
     .to-call{
     padding-bottom: 20px;
-
+    text-align: left;
     }
+     .social-network {
+       margin-top: 10px;
+     text-align: left;
+   }
+    /* Price */
     
+  .navigation-price {
+    position: static;
+     }
+    
+  .price-title {
+   padding-top: 20px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+    
+        .add-text {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .price-list {
+            margin-bottom: 10px;
+        }
+    
+        .price-name {
+            width: 360px;
+    
+            font-size: 16px;
+    
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            margin-left: 0px;
+        }
+    
+        .price-item {
+            font-size: 14px;
+    
+            width: 360px;
+            margin-left: 0px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+    
+        }
+    
+        .price-right {
+            float: inline-start;
+            margin-right: 15px;
+    
+        }
 }
 
 
@@ -945,15 +1184,36 @@ padding-left: 700px;
 @media(min-width:360px) and (max-width:420px) {
 
     /* header */
+    .header,
+    .logo,
+    .nav-item,
+    .intro,
+    .about-us,
+    .about-description,
+    .clinic,
+    .services,
+    .container,
+    .stuff,
+    .advantages,
+    .works,
+    .footer,
+    .footer-bg,
+    .price-name,
+    .price-item {
+    width: 420px;
+    }
     .navigation {
         display: list-item;
-        height: 520px;
+        height: auto;
+        padding-bottom: 20px;
     }
     .logo-text {
         font-size: 30px;
     }
     .logo {
-        padding-left: 130px;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
         padding-top: 20px;
         padding-bottom: 0px;
     }
@@ -965,43 +1225,30 @@ padding-left: 700px;
     }
     .nav-item {
         text-align: center;
-        padding-left: 120px;
-        font-size: 29px;
-        margin-bottom: 30px;
-        padding-top: 20px;
+        font-size: 28px;
+        margin-bottom: 20px;
+        padding-top: 0px;
     }
     .phone-up {
         font-size: 25px;
-        margin-left: 100px;
+        margin-left: 120px;
     }
-
-    .footer,
-    .works,
-    .stuff,
-    .clinic,
-    .services,
-    .intro {
-    width: 420px}
 
     /* about us */
 
     .intro {
-        height: 220px;
+        height: 240px;
     }
     .main-title {
-        color: var(--light-letter);
         font-size: 17px;
         line-height: 1.2;
 
-        padding-top: 170px;
-        padding-left: 40px;
+        padding-top: 100px;
+        padding-left: 160px;
     }
     .section-title {
         font-weight: 700;
         font-size: 25px;
-    }
-    .about-description {
-        width: 420px;
     }
     .about-title {
         padding-left: 20px;
@@ -1022,17 +1269,19 @@ padding-left: 700px;
     }
 
     .service-title {
-        padding-left: 120px;
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 0px;
     }
 
     .container {
-        width: 320px;
         height: auto;
-        font-size: 15px;
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
+        font-size: 18px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 10px;
     }
 
     .service-item {
@@ -1070,14 +1319,14 @@ padding-left: 700px;
     /* clinic */
     
     .clinic-title {
-        padding-top: 50px;
-        padding-left: 20px;
-        padding-bottom: 50px;
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-bottom: 30px;
     }
     .clinic-list {
         display: list-item;
         padding-bottom: 20PX;
-        margin-left: 30px;
+        margin-left: 50px;
     }
     .clinic-item:hover,
     .clinic-item:hover {
@@ -1088,15 +1337,16 @@ padding-left: 700px;
     /* stuff */
     
     .stuff-title {
+        text-align: center;
         padding-top: 30px;
-        padding-left: 130px;
+        padding-left: 0px;
         padding-bottom: 20px;
     }
     .stuff-list {
         display: list-item;
         margin-top: 10px;
-        margin-left: 50px;
-        padding-bottom: 30px;
+        margin-left:55px;
+        padding-bottom: 20px;
     }
     .stuff-items {
         margin-bottom: 20px;
@@ -1106,21 +1356,66 @@ padding-left: 700px;
         transform: scale(1);
     }
 
+  /* our advantages */
+  .advantages-title {
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+    }
+    
+ .advantages {
+  height: auto;
+    }
+    
+    .advantages-list {
+     display: list-item;
+     margin-left: 80px;
+     padding-bottom: 40px;
+    }
+    
+    .advantages-item:hover,
+    .advantages-item:focus {
+    transform: scale(1);
+    }
     /* our works */
    
     .work-title {
         padding-top: 30px;
         padding-bottom: 20px;
-        padding-left: 100px;
-    }
+        padding-left: 0px;
+        text-align: center;
 
+    }
+.photo-work {
+    width: 400px;
+    height: 360px;
+}
+
+.item-work {
+    width: 400px;
+}
+
+.list-work {
+    padding: 0px;
+}
+
+.view-work {
+    max-width: 400px;
+    width: calc(100% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
     /* footer */
     .footer {
-        height: 300px;
+        height: auto;
         display: list-item;
         padding-left: 25px;
         padding-top: 30px;
+        padding-bottom: 20px;
     }
+
     .address {
         padding-bottom: 20px;
     }
@@ -1129,14 +1424,2523 @@ padding-left: 700px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .to-call {
+     padding-bottom: 20px;
+        text-align: left;
+     }
     .phone-down {
         padding-top: 20px;
     }
+        .social-network {
+            margin-top: 10px;
+            text-align: left;
+        }
+/* Price */
+
+.navigation-price {
+    position: static;
 }
 
-    @media(min-width:420px) and (max-width:1700px){
-/* header */
+.price-title {
+    padding-top: 20px;
+    margin-bottom: 8px;
+    text-align: center;
+}
 
+.add-text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.price-list {
+    margin-bottom: 10px;
+}
+
+.price-name {
+
+    font-size: 18px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-left: 0px;
+}
+
+.price-item {
+    font-size: 15px;
+
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.price-right {
+    float: inline-start;
+    margin-right: 15px;
+}
+}
+
+/* 640*/
+@media(min-width:420px) and (max-width: 640px) {
+    /* header */
+    .header,
+    .logo,
+    .nav-item,
+    .intro,
+    .about-us,
+    .about-description,
+    .clinic,
+    .clinic-section,
+    .services,
+    .container,
+    .stuff,
+    .advantages,
+    .advantage-section,
+    .works,
+    .footer,
+    .footer-bg,
+    .price-name,
+    .price-item {
+        width: 640px;
+    }
+
+    .navigation {
+        display:inline-block;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+    }
+
+    .logo {
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .lotos {
+        width: 120px;
+    }
+
+    .nav-list {
+        display:flex;
+    }
+
+    .nav-item {
+        font-weight: 400;
+         font-size: 16px;
+        
+         width: 100px;
+        height: auto;
+
+        text-align: center;
+        margin-bottom: 20px;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .phone-up {
+        font-size: 18px;
+        margin-left: 250px;
+    }
+
+    /* about us */
+
+    .intro {
+        height: 260px;
+    }
+
+    .main-title {
+        font-size: 26px;
+        line-height: 1.2;
+
+        padding-top: 120px;
+        padding-left: 260px;
+    }
+
+    .section-title {
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .about-title {
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+
+    .text {
+        font-size: 19px;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+
+
+    /* services */
+
+    .service-list {
+        display: list-item;
+        height: auto;
+    }
+
+    .service-title {
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 0px;
+    }
+
+    .container {
+        height: auto;
+        font-size: 18px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 10px;
+    }
+
+    .service-item {
+        display: list-item;
+        text-align: center;
+    }
+
+    .service-one {
+        position: static;
+        margin-top: 6px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .service-two {
+        position: static;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .service-three,
+    .service-four,
+    .service-five,
+    .service-six,
+    .service-seven,
+    .service-eight {
+        position: static;
+    }
+
+    .service-nine {
+        position: static;
+        padding-bottom: 20px;
+    }
+
+    /* clinic */
+
+    .clinic-title {
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-bottom: 30px;
+    }
+
+    .clinic-list {
+        display: flex;
+        padding-bottom: 20PX;
+        margin-left: 30px;
+    }
+    .clinic-item {
+        width: 150px;
+    padding-right: 10px;
+   }
+
+    .clinic-item:hover,
+    .clinic-item:hover {
+        transform: scale(1.6);
+    }
+
+    /* stuff */
+
+    .stuff-title {
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-bottom: 20px;
+    }
+
+    .stuff-list {
+        display: flex;
+        margin-top: 10px;
+        margin-left:5px;
+        padding-bottom: 10px;
+    }
+
+    .stuff-items {
+        margin-bottom: 20px;
+        width: 200px;
+        height: 440px;
+        margin-right: 15px;
+    }
+    .photo-stuff{
+        width: 200px;
+    }
+   .names {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+   }
+
+
+    .stuff-items:hover,
+    .stuff-items:focus {
+        transform: scale(1);
+    }
+
+
+    /* our advantages */
+    .advantages-title {
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .advantages {
+        height: auto;
+    }
+     .advantages-list {
+      display: flex;
+        margin-top: 10px;
+         margin-left: 20px;
+        }
+.adv-name {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.adv-description {
+    font-size: 14px;
+    height: 100px;
+}
+.photo-advantages {
+    width: 190px;
+}
+
+
+.advantages-item:hover,
+.advantages-item:focus {
+    transform: scale(1);
+}
+
+
+     .advantages-item:not(:last-child) {
+       margin-right: 10px;
+    }
+    .advantages-list {
+        overflow-x: scroll;
+        margin-left: 0px;
+        padding-bottom: 20px;
+        list-style: none;
+        border: 5px solid var(--logo-bgc);
+        background-color: var(--logo-bgc);
+        padding: 10px;
+         border-radius: 12px;
+    }
+     .advantages-item {
+        justify-content: center;
+        width: 400px;
+         margin-right: 5px;
+        }
+       
+.advantage-section{
+    max-width: 610px;
+    width: calc(100% - 20px);
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+    /* our works */
+
+    .work-title {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .photo-work {
+        width: 300px;
+        height: 260px;
+    }
+
+    .item-work {
+        width: 300px;
+    }
+    .list-work {
+        padding: 0px;
+    }
+
+    .view-work {
+        max-width: 610px;
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* footer */
+   .footer {
+       height: 150px;
+       width: 640px;
+       padding-left: 10px;
+       padding-top: 10px;
+   }
+
+
+   .address {
+       padding-bottom: 20px;
+       margin-right: 140px;
+   }
+
+   .logo-down {
+       margin-right: 100px;
+       margin-top: 20px;
+   }
+
+
+   .phone-down {
+       
+       font-size: medium;
+   }
+
+   .to-call {
+       margin-right: 20px;
+       margin-bottom: 15px;
+   }
+
+   .social-network {
+       margin-top: 20px;
+       text-align: right;
+       margin-right: 20px;
+   }
+
+   .facebook {
+       margin-right: 10px;
+   }
+
+   .instagram:hover,
+   .instagram:focus,
+   .facebook:hover,
+   .facebook:focus {
+       transform: scale(1.3);
+
+   }
+    /* Price */
+
+    .navigation-price {
+        position: static;
+    }
+
+    .price-title {
+        padding-top: 20px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .add-text {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .price-list {
+        margin-bottom: 10px;
+    }
+
+    .price-name {
+
+        font-size: 18px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-left: 0px;
+    }
+
+    .price-item {
+        font-size: 15px;
+
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .price-right {
+        float: inline-start;
+        margin-right: 15px;
+    }
+}
+/* 740 */
+@media(min-width:640px) and (max-width: 740px) {
+
+    /* header */
+    .header,
+    .logo,
+    .nav-item,
+    .intro,
+    .about-us,
+    .about-description,
+    .clinic,
+    .clinic-section,
+    .services,
+    .container,
+    .stuff,
+    .advantages,
+    .advantage-section,
+    .works,
+    .footer,
+    .footer-bg,
+    .price-name,
+    .price-item {
+        width: 740px;
+    }
+
+    .navigation {
+        display: inline-block;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .logo-text {
+        font-size: 26px;
+    }
+
+    .logo {
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .lotos {
+        width: 130px;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-item {
+        font-weight: 400;
+        font-size: 20px;
+
+        width: 120px;
+        height: auto;
+
+        text-align: center;
+        margin-bottom: 20px;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .phone-up {
+        font-size: 18px;
+        margin-left: 300px;
+    }
+
+    /* about us */
+
+    .intro {
+        height: 300px;
+    }
+
+    .main-title {
+        font-size: 28px;
+        line-height: 1.2;
+
+        padding-top: 120px;
+        padding-left: 300px;
+    }
+
+    .section-title {
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .about-title {
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+
+    .text {
+        font-size: 19px;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+
+
+    /* services */
+
+    .service-list {
+        display: list-item;
+        height: auto;
+    }
+
+    .service-title {
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 0px;
+    }
+
+    .container {
+        height: auto;
+        font-size: 18px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 10px;
+    }
+
+    .service-item {
+        display: list-item;
+        text-align: center;
+    }
+
+    .service-one {
+        position: static;
+        margin-top: 6px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .service-two {
+        position: static;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .service-three,
+    .service-four,
+    .service-five,
+    .service-six,
+    .service-seven,
+    .service-eight {
+        position: static;
+    }
+
+    .service-nine {
+        position: static;
+        padding-bottom: 20px;
+    }
+
+    /* clinic */
+
+    .clinic-title {
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-bottom: 30px;
+    }
+
+    .clinic-list {
+        display: flex;
+        padding-bottom: 20PX;
+        margin-left: 30px;
+    }
+
+    .clinic-item {
+        width: 170px;
+        padding-right: 10px;
+    }
+
+    .clinic-item:hover,
+    .clinic-item:hover {
+        transform: scale(1.6);
+    }
+
+    /* stuff */
+
+    .stuff-title {
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-bottom: 20px;
+    }
+
+    .stuff-list {
+        display: flex;
+        margin-top: 10px;
+        margin-left: 5px;
+        padding-bottom: 10px;
+    }
+
+    .stuff-items {
+        margin-bottom: 20px;
+        width: 230px;
+        height: 440px;
+        margin-right: 15px;
+    }
+
+    .photo-stuff {
+        width: 230px;
+    }
+
+    .names {
+        font-size: 16px;
+        letter-spacing: 0.03em;
+    }
+
+
+    .stuff-items:hover,
+    .stuff-items:focus {
+        transform: scale(1);
+    }
+
+
+    /* our advantages */
+    .advantages-title {
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .advantages {
+        height: auto;
+    }
+
+    .advantages-list {
+        display: flex;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .adv-name {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .adv-description {
+        font-size: 14px;
+        height: 100px;
+    }
+
+    .photo-advantages {
+        width: 190px;
+    }
+
+
+    .advantages-item:hover,
+    .advantages-item:focus {
+        transform: scale(1);
+    }
+
+
+    .advantages-item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .advantages-list {
+        overflow-x: scroll;
+        margin-left: 0px;
+        padding-bottom: 20px;
+        list-style: none;
+        border: 5px solid var(--logo-bgc);
+        background-color: var(--logo-bgc);
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .advantages-item {
+        justify-content: center;
+        width: 400px;
+        margin-right: 5px;
+    }
+
+    .advantage-section {
+        max-width: 720px;
+        width: calc(100% - 20px);
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* our works */
+
+    .work-title {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .photo-work {
+        width: 300px;
+        height: 260px;
+    }
+
+    .item-work {
+        width: 300px;
+    }
+
+    .list-work {
+        padding: 0px;
+    }
+
+    .view-work {
+        max-width: 720px;
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* footer */
+    .footer {
+        height: 150px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+
+    .address {
+        padding-bottom: 20px;
+        margin-right: 140px;
+    }
+
+    .logo-down {
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+
+
+    .phone-down {
+        font-size: medium;
+        margin-left: 40px;
+    }
+
+    .to-call {
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+
+    .social-network {
+        margin-top: 20px;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .facebook {
+        margin-right: 10px;
+    }
+
+    .instagram:hover,
+    .instagram:focus,
+    .facebook:hover,
+    .facebook:focus {
+        transform: scale(1.3);
+
+    }
+
+    /* Price */
+
+    .navigation-price {
+        position: static;
+    }
+
+    .price-title {
+        padding-top: 20px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .add-text {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .price-list {
+        margin-bottom: 10px;
+    }
+
+    .price-name {
+
+        font-size: 18px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-left: 0px;
+    }
+
+    .price-item {
+        font-size: 15px;
+
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .price-right {
+        float: inline-start;
+        margin-right: 15px;
+    }
+}
+
+/* 780 */
+@media(min-width:740px) and (max-width: 780px){
+
+        /* header */
+        .header,
+        .logo,
+        .nav-item,
+        .intro,
+        .about-us,
+        .about-description,
+        .clinic,
+        .clinic-section,
+        .services,
+        .container,
+        .stuff,
+        .advantages,
+        .advantage-section,
+        .works,
+        .footer,
+        .footer-bg,
+        .price-name,
+        .price-item {
+            width: 780px;
+        }
+
+        .navigation {
+            display: inline-block;
+            height: auto;
+            padding-bottom: 20px;
+        }
+
+        .logo-text {
+            font-size: 26px;
+        }
+
+        .logo {
+            text-align: center;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .lotos {
+            width: 130px;
+        }
+
+        .nav-list {
+            display: flex;
+        }
+
+        .nav-item {
+            font-weight: 400;
+            font-size: 20px;
+
+            width: 130px;
+            height: auto;
+
+            text-align: center;
+            margin-bottom: 20px;
+            padding-left: 0px;
+            padding-top: 0px;
+        }
+
+        .phone-up {
+            font-size: 18px;
+            margin-left: 320px;
+        }
+
+        /* about us */
+
+        .intro {
+            height: 300px;
+        }
+
+        .main-title {
+            font-size: 28px;
+            line-height: 1.2;
+
+            padding-top: 120px;
+            padding-left: 300px;
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-size: 25px;
+        }
+
+        .about-title {
+            padding-left: 20px;
+            padding-top: 30px;
+        }
+
+        .text {
+            font-size: 19px;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+
+        /* services */
+
+        .service-list {
+            display: list-item;
+            height: auto;
+        }
+
+        .service-title {
+            text-align: center;
+            padding-top: 30px;
+            padding-left: 0px;
+        }
+
+        .container {
+            height: auto;
+            font-size: 18px;
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 10px;
+        }
+
+        .service-item {
+            display: list-item;
+            text-align: center;
+        }
+
+        .service-one {
+            position: static;
+            margin-top: 6px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .service-two {
+            position: static;
+            margin-left: 0px;
+            margin-right: 0px;
+
+        }
+
+        .service-three,
+        .service-four,
+        .service-five,
+        .service-six,
+        .service-seven,
+        .service-eight {
+            position: static;
+        }
+
+        .service-nine {
+            position: static;
+            padding-bottom: 20px;
+        }
+
+        /* clinic */
+
+        .clinic-title {
+            padding-top: 30px;
+            padding-left: 50px;
+            padding-bottom: 30px;
+        }
+
+        .clinic-list {
+            display: flex;
+            padding-bottom: 20PX;
+            margin-left: 30px;
+        }
+
+        .clinic-item {
+            width: 180px;
+            padding-right: 10px;
+        }
+
+        .clinic-item:hover,
+        .clinic-item:hover {
+            transform: scale(1.6);
+        }
+
+        /* stuff */
+
+        .stuff-title {
+            text-align: center;
+            padding-top: 30px;
+            padding-left: 0px;
+            padding-bottom: 20px;
+        }
+
+        .stuff-list {
+            display: flex;
+            margin-top: 10px;
+            margin-left: 5px;
+            padding-bottom: 10px;
+        }
+
+        .stuff-items {
+            margin-bottom: 20px;
+            width: 250px;
+            height: 440px;
+            margin-right: 15px;
+        }
+
+        .photo-stuff {
+            width: 230px;
+        }
+
+        .names {
+            font-size: 16px;
+            letter-spacing: 0.03em;
+        }
+
+
+        .stuff-items:hover,
+        .stuff-items:focus {
+            transform: scale(1);
+        }
+
+
+        /* our advantages */
+        .advantages-title {
+            text-align: center;
+            padding-left: 0px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .advantages {
+            height: auto;
+        }
+
+        .advantages-list {
+            display: flex;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .adv-name {
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .adv-description {
+            font-size: 14px;
+            height: 100px;
+        }
+
+        .photo-advantages {
+            width: 190px;
+        }
+
+
+        .advantages-item:hover,
+        .advantages-item:focus {
+            transform: scale(1);
+        }
+
+
+        .advantages-item:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        .advantages-list {
+            overflow-x: scroll;
+            margin-left: 0px;
+            padding-bottom: 20px;
+            list-style: none;
+            border: 5px solid var(--logo-bgc);
+            background-color: var(--logo-bgc);
+            padding: 10px;
+            border-radius: 12px;
+        }
+
+        .advantages-item {
+            justify-content: center;
+            width: 400px;
+            margin-right: 5px;
+        }
+
+        .advantage-section {
+            max-width: 780px;
+            width: calc(100% - 20px);
+            margin-left: 0px;
+            margin-right: 10px;
+            margin-bottom: 0px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* our works */
+
+        .work-title {
+            padding-top: 30px;
+            padding-bottom: 20px;
+            padding-left: 0px;
+            text-align: center;
+        }
+
+        .photo-work {
+            width: 300px;
+            height: 260px;
+        }
+
+        .item-work {
+            width: 300px;
+        }
+
+        .list-work {
+            padding: 0px;
+        }
+
+        .view-work {
+            max-width: 760px;
+            width: calc(100% - 10px);
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* footer */
+        .footer {
+            height: 150px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+
+        .address {
+            padding-bottom: 20px;
+            margin-right: 140px;
+        }
+
+        .logo-down {
+            margin-right: 100px;
+            margin-top: 20px;
+        }
+
+
+        .phone-down {
+            font-size: medium;
+            margin-left: 50px;
+        }
+
+        .to-call {
+            margin-right: 20px;
+            margin-bottom: 15px;
+        }
+
+        .social-network {
+            margin-top: 20px;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        .facebook {
+            margin-right: 10px;
+        }
+
+        .instagram:hover,
+        .instagram:focus,
+        .facebook:hover,
+        .facebook:focus {
+            transform: scale(1.3);
+
+        }
+
+        /* Price */
+
+        .navigation-price {
+            position: static;
+        }
+
+        .price-title {
+            padding-top: 20px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .add-text {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .price-list {
+            margin-bottom: 10px;
+        }
+
+        .price-name {
+
+            font-size: 22px;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            margin-left: 0px;
+        }
+
+        .price-item {
+            font-size: 18px;
+
+            margin-left: 0px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+
+        .price-right {
+            float: inline-start;
+            margin-right: 15px;
+        }
+    }
+
+    /* 960*/
+@media(min-width:780px) and (max-width: 960px) {
+
+    /* header */
+    .header,
+    .navigation,
+    .nav-item,
+    .intro,
+    .about-us,
+    .about-description,
+    .clinic,
+    .clinic-section,
+    .services,
+    .container,
+    .stuff,
+    .advantages,
+    .advantage-section,
+    .works,
+    .footer,
+    .footer-bg,
+    .price-name,
+    .price-item {
+        width: 960px;
+    }
+
+    .navigation {
+        padding-bottom: 10px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+    }
+
+    .logo {
+        padding-left: 10px;
+        padding-right: 0px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    .lotos {
+        width: 110px;
+    }
+
+    .nav-item {
+        font-weight: 400;
+        font-size: 18px;
+
+        width: 110px;
+        height: auto;
+
+        margin-bottom: 20px;
+        padding-left: 0px;
+        padding-top: 35px;
+    }
+
+    .phone-up {
+        margin-left: 0px;
+    }
+
+    /* about us */
+
+    .intro {
+        height: 350px;
+    }
+
+    .main-title {
+        font-size: 39px;
+        line-height: 1.2;
+
+        padding-top: 180px;
+        padding-left: 360px;
+    }
+
+    .section-title {
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .about-title {
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+
+    .text {
+        font-size: 19px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    /* services */
+
+        .service-list {
+            height: 770px;
+        }
+    
+        .service-title {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            padding-left:0px;
+        }
+    
+        .service-name {
+          
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+    
+        .container {
+            width: 260px;
+            height:auto;
+            font-size: 16px;
+        }
+
+    
+        .service-one {
+            position: relative;
+            margin-top: 25px;
+            margin-left: 30px;
+            margin-right: 55px;
+        }
+    
+        .service-two {
+            position: relative;
+            margin-top: 25px;
+            margin-right: 55px;
+        }
+    
+        .service-three {
+            position: relative;
+            margin-top: 25px;
+        }
+    
+        .service-four {
+            position: relative;
+            top: 300px;
+            right: 890px;
+        }
+    
+        .service-five {
+            position: relative;
+            top: 300px;
+            right: 835px;
+        }
+    
+        .service-six {
+            position: relative;
+            top: 300px;
+            right: 780px;
+        }
+    
+        .service-seven {
+            position: relative;
+            top: 585px;
+            right: 1670px;
+        }
+    
+        .service-eight {
+            position: relative;
+            top: 585px;
+            right: 1615px;
+        }
+    
+        .service-nine {
+            position: relative;
+            top: 585px;
+            right: 1560px;
+        }
+
+    /* clinic */
+
+    .clinic-title {
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-bottom: 30px;
+    }
+
+    .clinic-list {
+        padding-bottom: 20PX;
+        margin-left: 20px;
+    }
+
+    .clinic-item {
+        width: 230px;
+        padding-right: 10px;
+    }
+
+    /* stuff */
+
+    .stuff-title {
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-bottom: 20px;
+    }
+
+    .stuff-list {
+        display: flex;
+        margin-top: 10px;
+        margin-left: 5px;
+        padding-bottom: 10px;
+    }
+
+    .stuff-items {
+        margin-bottom: 20px;
+        width: 350px;
+        height: 440px;
+        margin-right: 15px;
+    }
+
+    .photo-stuff {
+        width: 230px;
+    }
+
+    .names {
+        font-size: 16px;
+        letter-spacing: 0.03em;
+    }
+
+
+    .stuff-items:hover,
+    .stuff-items:focus {
+        transform: scale(1);
+    }
+
+
+    /* our advantages */
+    .advantages-title {
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .advantages {
+        height: auto;
+    }
+
+    .advantages-list {
+        display: flex;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .adv-name {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .adv-description {
+        font-size: 14px;
+        height: 100px;
+    }
+
+    .photo-advantages {
+        width: 190px;
+    }
+
+
+    .advantages-item:hover,
+    .advantages-item:focus {
+        transform: scale(1);
+    }
+
+
+    .advantages-item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .advantages-list {
+        overflow-x: scroll;
+        margin-left: 0px;
+        padding-bottom: 20px;
+        list-style: none;
+        border: 5px solid var(--logo-bgc);
+        background-color: var(--logo-bgc);
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .advantages-item {
+        justify-content: center;
+        width: 400px;
+        margin-right: 5px;
+    }
+
+    .advantage-section {
+        max-width: 940px;
+        width: calc(100% - 20px);
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* our works */
+
+    .work-title {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .photo-work {
+        width: 300px;
+        height: 260px;
+    }
+
+    .item-work {
+        width: 300px;
+    }
+
+    .list-work {
+        padding: 0px;
+    }
+
+    .view-work {
+        max-width: 940px;
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* footer */
+    .footer {
+        height: 150px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+
+    .address {
+        padding-bottom: 20px;
+        margin-right: 180px;
+    }
+
+    .logo-down {
+        margin-right: 200px;
+        margin-top: 20px;
+    }
+
+
+    .phone-down {
+        font-size: medium;
+        margin-left: 70px;
+    }
+
+    .to-call {
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+
+    .social-network {
+        margin-top: 20px;
+        text-align: right;
+        margin-right: 20px;
+    }
+    /* Price */
+
+    .navigation-price {
+        position: static;
+    }
+
+    .price-title {
+        padding-top: 20px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .add-text {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .price-list {
+        margin-bottom: 10px;
+    }
+
+    .price-name {
+
+        font-size: 22px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-left: 0px;
+    }
+
+    .price-item {
+        font-size: 18px;
+
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .price-right {
+        float: inline-start;
+        margin-right: 15px;
+    }
+
+}
+    /* 1030 */
+
+ @media(min-width:960px) and (max-width: 1030px) {
+    
+  /* header */
+ .header,
+.navigation,
+.nav-item,
+.intro,
+.about-us,
+.about-description,
+.clinic,
+.clinic-section,
+.services,
+.container,
+.stuff,
+.advantages,
+.advantage-section,
+.works,
+.footer,
+.footer-bg,
+ .price-name,
+.price-item {
+  width: 1030px;
+}
+    
+            .navigation {
+                padding-bottom: 10px;
+            }
+    
+            .logo-text {
+                font-size: 24px;
+            }
+    
+            .logo {
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 25px;
+                padding-bottom: 10px;
+            }
+    
+            .lotos {
+                width: 120px;
+            }
+    
+            .nav-item {
+                font-weight: 400;
+                font-size: 18px;
+    
+                width: 120px;
+                height: auto;
+    
+                margin-bottom: 20px;
+                padding-left: 0px;
+                padding-top: 35px;
+            }
+    
+            .phone-up {
+                margin-left: 0px;
+            }
+    
+            /* about us */
+    
+            .intro {
+                height: 350px;
+            }
+    
+            .main-title {
+                font-size: 42px;
+                line-height: 1.2;
+    
+                padding-top: 180px;
+                padding-left: 400px;
+            }
+    
+            .section-title {
+                font-weight: 700;
+                font-size: 25px;
+            }
+    
+            .about-title {
+                padding-left: 20px;
+                padding-top: 30px;
+            }
+    
+            .text {
+                font-size: 19px;
+                padding-left: 20px;
+                padding-right: 10px;
+            }
+    
+            /* services */
+    
+            .service-list {
+                height: 790px;
+            }
+    
+            .service-title {
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                padding-left: 0px;
+            }
+    
+            .service-name {
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+    
+            .container {
+                width: 260px;
+                height: auto;
+                font-size: 16px;
+            }
+    
+    
+            .service-one {
+                position: relative;
+                margin-top: 25px;
+                margin-left: 40px;
+                margin-right: 80px;
+            }
+    
+            .service-two {
+                position: relative;
+                margin-top: 25px;
+                margin-right: 80px;
+            }
+    
+            .service-three {
+                position: relative;
+                margin-top: 25px;
+            }
+    
+            .service-four {
+                position: relative;
+                top: 300px;
+                right: 890px;
+            }
+    
+            .service-five {
+                position: relative;
+                top: 300px;
+                right: 835px;
+            }
+    
+            .service-six {
+                position: relative;
+                top: 300px;
+                right: 780px;
+            }
+    
+            .service-seven {
+                position: relative;
+                top: 585px;
+                right: 1670px;
+            }
+    
+            .service-eight {
+                position: relative;
+                top: 585px;
+                right: 1615px;
+            }
+    
+            .service-nine {
+                position: relative;
+                top: 585px;
+                right: 1560px;
+            }
+    
+            /* clinic */
+    
+            .clinic-title {
+                padding-top: 30px;
+                padding-left: 50px;
+                padding-bottom: 30px;
+            }
+    
+            .clinic-list {
+                padding-bottom: 20PX;
+                margin-left: 20px;
+            }
+    
+            .clinic-item {
+                width: 250px;
+                padding-right: 10px;
+            }
+    
+            /* stuff */
+    
+            .stuff-title {
+                text-align: center;
+                padding-top: 30px;
+                padding-left: 0px;
+                padding-bottom: 20px;
+            }
+    
+            .stuff-list {
+                display: flex;
+                margin-top: 10px;
+                margin-left: 35px;
+                padding-bottom: 10px;
+            }
+    
+            .stuff-items {
+                margin-bottom: 20px;
+                width: 300px;
+                height: 440px;
+                margin-right: 35px;
+            }
+    
+            .photo-stuff {
+                width: 230px;
+            }
+    
+            .names {
+                font-size: 16px;
+                letter-spacing: 0.03em;
+            }
+    
+    
+            .stuff-items:hover,
+            .stuff-items:focus {
+                transform: scale(1);
+            }
+    
+    
+            /* our advantages */
+            .advantages-title {
+                text-align: center;
+                padding-left: 0px;
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+    
+            .advantages {
+                height: auto;
+            }
+    
+            .advantages-list {
+                display: flex;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+    
+            .adv-name {
+                font-size: 16px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+    
+            .adv-description {
+                font-size: 14px;
+                height: 100px;
+            }
+    
+            .photo-advantages {
+                width: 190px;
+            }
+    
+    
+            .advantages-item:hover,
+            .advantages-item:focus {
+                transform: scale(1);
+            }
+    
+    
+            .advantages-item:not(:last-child) {
+                margin-right: 10px;
+            }
+    
+            .advantages-list {
+                overflow-x: scroll;
+                margin-left: 0px;
+                padding-bottom: 20px;
+                list-style: none;
+                border: 5px solid var(--logo-bgc);
+                background-color: var(--logo-bgc);
+                padding: 10px;
+                border-radius: 12px;
+            }
+    
+            .advantages-item {
+                justify-content: center;
+                width: 400px;
+                margin-right: 5px;
+            }
+    
+            .advantage-section {
+                max-width: 1000px;
+                width: calc(100% - 20px);
+                margin-left: 0px;
+                margin-right: 10px;
+                margin-bottom: 0px;
+            }
+    
+            *,
+            *::before,
+            *::after {
+                margin: 0;
+                box-sizing: border-box;
+            }
+    
+            /* our works */
+    
+            .work-title {
+                padding-top: 30px;
+                padding-bottom: 20px;
+                padding-left: 0px;
+                text-align: center;
+            }
+    
+            .photo-work {
+                width: 300px;
+                height: 260px;
+            }
+    
+            .item-work {
+                width: 300px;
+            }
+    
+            .list-work {
+                padding: 0px;
+            }
+    
+            .view-work {
+                max-width: 1000px;
+                width: calc(100% - 10px);
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+            }
+    
+            /* footer */
+            .footer {
+                height: 150px;
+                padding-left: 10px;
+                padding-top: 20px;
+            }
+    
+    
+            .address {
+                padding-bottom: 20px;
+                margin-right: 220px;
+            }
+    
+            .logo-down {
+                margin-right: 250px;
+                margin-top: 20px;
+            }
+    
+    
+            .phone-down {
+                font-size: medium;
+                margin-left: 70px;
+            }
+    
+            .to-call {
+                margin-right: 20px;
+                margin-bottom: 15px;
+            }
+    
+            .social-network {
+                margin-top: 20px;
+                text-align: right;
+                margin-right: 20px;
+            }
+    
+            /* Price */
+    
+            .navigation-price {
+                position: static;
+            }
+    
+            .price-title {
+                padding-top: 20px;
+                margin-bottom: 8px;
+                text-align: center;
+            }
+    
+            .add-text {
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+    
+            .price-list {
+                margin-bottom: 10px;
+            }
+    
+            .price-name {
+    
+                font-size: 22px;
+    
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                margin-left: 0px;
+            }
+    
+            .price-item {
+                font-size: 18px;
+    
+                margin-left: 0px;
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+    
+            }
+    
+            .price-right {
+                float: inline-start;
+                margin-right: 15px;
+            }}
+
+
+
+/* 1280 */
+ @media(min-width:1030px) and (max-width: 1280px) {
+
+     /* header */
+     .header,
+     .navigation,
+     .nav-item,
+     .intro,
+     .about-us,
+     .about-description,
+     .clinic,
+     .clinic-section,
+     .services,
+     .container,
+     .stuff,
+     .advantages,
+     .advantage-section,
+     .works,
+     .footer,
+     .footer-bg,
+     .price-name,
+     .price-item {
+         width: 1280px;
+     }
+
+     .navigation {
+         padding-bottom: 10px;
+     }
+
+     .logo-text {
+         font-size: 24px;
+     }
+
+     .logo {
+         padding-left: 20px;
+         padding-right: 50px;
+         padding-top: 25px;
+         padding-bottom: 10px;
+     }
+
+     .lotos {
+         width: 120px;
+     }
+
+     .nav-item {
+         font-weight: 400;
+         font-size: 18px;
+
+         width: 140px;
+         height: auto;
+
+         margin-bottom: 20px;
+         padding-left: 0px;
+         padding-top: 35px;
+     }
+
+     .phone-up {
+         margin-left: 60px;
+     }
+
+     /* about us */
+
+     .intro {
+         height: 450px;
+     }
+
+     .main-title {
+         font-size: 44px;
+
+         padding-top: 200px;
+         padding-left: 520px;
+     }
+
+     .section-title {
+         font-weight: 700;
+         font-size: 25px;
+     }
+
+     .about-title {
+         padding-left: 30px;
+         padding-top: 30px;
+     }
+
+     .text {
+         font-size: 24px;
+         padding-left: 30px;
+         padding-right: 20px;
+     }
+
+     /* services */
+
+     .service-list {
+         height: 820px;
+     }
+
+     .service-title {
+         text-align: center;
+         padding-top: 30px;
+         padding-bottom: 10px;
+         padding-left: 0px;
+     }
+
+     .service-name {
+         font-size: 20px;
+         padding-bottom: 20px;
+     }
+
+     .container {
+         width: 320px;
+         height: 500px;
+         font-size: 18px;
+     }
+
+
+     .service-one {
+         position: relative;
+         margin-top: 25px;
+         margin-left: 80px;
+         margin-right: 80px;
+     }
+
+     .service-two {
+         position: relative;
+         margin-top: 25px;
+         margin-right: 80px;
+     }
+
+     .service-three {
+         position: relative;
+         margin-top: 25px;
+     }
+
+     .service-four {
+         position: relative;
+         top: 300px;
+         right: 1120px;
+     }
+
+     .service-five {
+         position: relative;
+         top: 300px;
+         right: 1040px;
+     }
+
+     .service-six {
+         position: relative;
+         top: 300px;
+         right: 960px;
+     }
+
+     .service-seven {
+         position: relative;
+         top: 585px;
+         right: 2080px;
+     }
+
+     .service-eight {
+         position: relative;
+         top: 585px;
+         right: 2000px;
+     }
+
+     .service-nine {
+         position: relative;
+         top: 585px;
+         right: 1900px;
+     }
+
+     /* clinic */
+
+     .clinic-title {
+         padding-top: 30px;
+         padding-left: 50px;
+         padding-bottom: 30px;
+     }
+
+     .clinic-list {
+         padding-bottom: 20PX;
+         margin-left: 50px;
+     }
+
+     .clinic-item {
+         width: 300px;
+         padding-right: 10px;
+     }
+
+     /* stuff */
+
+     .stuff-title {
+         text-align: center;
+         padding-top: 30px;
+         padding-left: 0px;
+         padding-bottom: 20px;
+     }
+
+     .stuff-list {
+         display: flex;
+         margin-top: 10px;
+         margin-left: 120px;
+         padding-bottom: 10px;
+     }
+
+     .stuff-items {
+         margin-bottom: 20px;
+         width: 250px;
+         height: 440px;
+         margin-right: 140px;
+     }
+
+     .photo-stuff {
+         width: 230px;
+     }
+
+     .names {
+         font-size: 16px;
+         letter-spacing: 0.03em;
+     }
+
+
+     .stuff-items:hover,
+     .stuff-items:focus {
+         transform: scale(1);
+     }
+
+
+     /* our advantages */
+     .advantages-title {
+         text-align: center;
+         padding-left: 0px;
+         padding-top: 20px;
+         padding-bottom: 10px;
+     }
+
+     .advantages {
+         height: 450px;
+     }
+
+     .advantages-list {
+         display: flex;
+         margin-top: 10px;
+         margin-left: 20px;
+     }
+
+     .adv-name {
+         font-size: 16px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+     }
+
+     .adv-description {
+         font-size: 14px;
+         height: 100px;
+     }
+
+     .photo-advantages {
+         width: 190px;
+     }
+
+
+     .advantages-item:hover,
+     .advantages-item:focus {
+         transform: scale(1);
+     }
+
+
+     /* our works */
+
+     .work-title {
+         padding-top: 30px;
+         padding-bottom: 20px;
+         padding-left: 0px;
+         text-align: center;
+     }
+
+     .photo-work {
+         width: 300px;
+         height: 260px;
+     }
+
+     .item-work {
+         width: 300px;
+     }
+
+     .list-work {
+         padding: 0px;
+     }
+
+     .view-work {
+         max-width: 1200px;
+         width: calc(100% - 10px);
+         margin-left: 40px;
+         margin-right: 40px;
+         margin-bottom: 30px;
+     }
+
+     /* footer */
+     .footer {
+         height: 170px;
+         padding-left: 10px;
+         padding-top: 20px;
+     }
+
+
+     .address {
+         padding-bottom: 20px;
+         margin-right: 380px;
+     }
+
+     .logo-down {
+         margin-right: 350px;
+         margin-top: 20px;
+     }
+
+
+     .phone-down {
+         font-size: medium;
+         margin-left: 60px;
+     }
+
+     .to-call {
+         margin-right: 20px;
+         margin-bottom: 15px;
+     }
+
+     .social-network {
+         margin-top: 20px;
+         text-align: right;
+         margin-right: 20px;
+     }
+
+     /* Price */
+
+     .navigation-price {
+         position: static;
+     }
+
+     .price-title {
+         padding-top: 20px;
+         margin-bottom: 8px;
+         text-align: center;
+     }
+
+     .add-text {
+         font-size: 20px;
+         text-align: center;
+         margin-bottom: 20px;
+     }
+
+     .price-list {
+         margin-bottom: 10px;
+     }
+
+     .price-name {
+
+         font-size: 22px;
+
+         padding-top: 20px;
+         padding-bottom: 20px;
+         padding-left: 20px;
+         margin-left: 0px;
+     }
+
+     .price-item {
+         font-size: 20px;
+
+         margin-left: 0px;
+         padding-left: 10px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+
+     }
+
+     .price-right {
+         float: inline-start;
+         margin-right: 15px;
+     }
+ }
+ 
+    @media(min-width:1280px) and (max-width:1700px){
+/* header */
+ 
 .navigation{
     width: 1700px;
 }
@@ -1178,7 +3982,7 @@ padding-left: 700px;
 }
 .clinic-list{
     margin-left: 0px;
-}
+} 
 
 /* stuff */
 
@@ -1193,10 +3997,10 @@ padding-left: 700px;
 
 .work-title{
 padding-left: 700px;
-}
+} 
 
 /* footer */
-.footer{
+ .footer{
     padding-left: 70px;
     
 }
@@ -1206,5 +4010,4 @@ padding-left: 700px;
 .phone-down{
     padding-left: 60px;
 }
-    }
-
+    
